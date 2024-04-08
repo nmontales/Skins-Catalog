@@ -2,38 +2,87 @@
 <html>
 
 <head>
-    <title>LA TV Shows | Home</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
+    <title>CS2 skins</title>
+    <meta name="description" content="A catalog of some of the most expensive skins in CS2 and how much they are worth.">
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="scripts.js"></script>
 </head>
 
 <body>
-    <header class="main-header">
-        <h1 class="title">LA TV Shows</h1>
-    </header>
-    <div id="card-container">
-        
+
+    <div class="navbar">
+        <nav class="navbarItems">
+            <a class="navButton" href="#home"> Home </a>
+            <a class="navButton" href="#what"> What </a>
+            <a class="navButton" href="#why"> Why </a>
+            <a class="navButton" href="#skins"> Skins </a>
+        </nav>
     </div>
-    <div class="card" style="display: none;">
-        <div class="card-content">
-            <h2>TV Show Title</h2>
-            <img src="" alt="TV Show Poster">
-            <ul>
-                <li>Bullet Point 1</li>
-                <li>Bullet Point 2</li>
-                <li>Bullet Point 3</li>
-            </ul>
+
+    <div class="Home" id="home">
+        <div class="homeContents">
+            <h1>Counter Stike Skins Catalog</h1>
+            <img src="public/csgo-skins-explained-2.png" height="450" width="900">
         </div>
     </div>
-    <div class="footer">
-        <button onclick="quoteAlert();">
-            Get A Quote!
-        </button>
-        <button onclick="removeLastCard();">
-            Remove A Card!
-        </button>
+
+    <div class="What" id="what">
+        <div class="whatContent">
+            <h1> What is Counter Strike? </h1>
+            <img src="public/cs2.jpg" height="400" width="800">
+            <p> 
+                Counter-Strike is a first-person shooter video game that has garnered a massive following since its initial release in 1999. 
+                Developed as a mod for Half-Life, it quickly evolved into a standalone game. The gameplay focuses on two opposing teams, the 
+                Terrorists and the Counter-Terrorists, engaging in various objective-based scenarios, including bomb planting/defusal and 
+                hostage rescue. Players select from a variety of weapons and equipment at the beginning of each round, using strategy, teamwork,
+                and individual skill to outmaneuver and defeat their opponents. The game is renowned for its competitive scene, featuring
+                numerous tournaments and leagues worldwide, and has seen several updates and iterations, including the popular Counter-Strike:
+                Global Offensive (CSGO). In 2013, CSGO recieved an update titled the armsdeal update which introduced skins as an addition to the
+                game. Eleven years later and with the release of CS2, skins have garnered their own market valueing into the millions of dollars. 
+            </p>
+        </div>
     </div>
+
+    <div class="Why" id="why">
+        <div class="whyContent">
+            <h1> Why are some skins so expensive? </h1>
+            <p>
+                Skins in Counter Strike have gotten to the prices they are because of how they are obtained. A majority of skins are recieved 
+                by opening cases that are recieved by playing the game or by buying the case from the steam market. Once you open the case you 
+                have a chance at getting a skin with differing rarity. The rarest gun skin being the coverts marked with the color red, and the 
+                the rarest items you can get from the cases are knives that have a 1 in 400 chance to drop. Each opening is random so even if you 
+                statistically have those odds at opening a knife you can open thousands of cases and never open one. 
+            </p>
+
+            <div class="whyImages">
+                <div class="patternTemplate">
+                    <img src="public/case hardened.webp" height = "300" width = "300"> 
+                    <p> Pattern Template for case hardened skinline </p>
+                </div>
+               
+                <div class="caseHardened">
+                    <img src="public/why ak47.png">
+                    <p> Ak47 Case Hardened </p>
+                </div>
+            </div>
+
+            <p>
+                Once getting a skin there are still more factors that the price takes into account. Each skin has a wear rating and pattern 
+                index. Each weapon skin has an associated pattern template, and the pattern index dictates how this template is applied to a 
+                specific weapon. This can affect the positioning, rotation, and scale of the pattern on the weapon, resulting in visually 
+                distinct apearances even among weapons of the same skin type.The wear rating of the skin determines how clean the skin is 
+                gonna look. Factory new means that its the best rating, then it goes to minimal wear, field-tested, well-worn, and battle-scared. 
+                The rating depends on a numerical value called float, the lower the float the better the rating. The pattern index and wear value 
+                together significantly affect a skin's aesthetics and, by extension, it's market value. 
+            </p>
+        </div>
+
+        <div class="Skins" id="skins">
+
+        </div>
+    </div>
+ 
+   
 </body>
 
 </html>
