@@ -5,7 +5,6 @@
     <title>CS2 skins</title>
     <meta name="description" content="A catalog of some of the most expensive skins in CS2 and how much they are worth.">
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
 </head>
 
 <body>
@@ -21,14 +20,14 @@
 
     <div class="Home" id="home">
         <div class="homeContents">
-            <h1>Counter Stike Skins Catalog</h1>
-            <img src="public/csgo-skins-explained-2.png" height="450" width="900">
+            <h1>Counter-Strike Skins Catalog</h1>
+            <img src="public/homePhoto.jpeg" height="450" width="900">
         </div>
     </div>
 
     <div class="What" id="what">
         <div class="whatContent">
-            <h1> What is Counter Strike? </h1>
+            <h1> What is Counter-Strike? </h1>
             <img src="public/cs2.jpg" height="400" width="800">
             <p> 
                 Counter-Strike is a first-person shooter video game that has garnered a massive following since its initial release in 1999. 
@@ -48,7 +47,7 @@
             <h1> Why are some skins so expensive? </h1>
             <p>
                 Skins in Counter Strike have gotten to the prices they are because of how they are obtained. A majority of skins are recieved 
-                by opening cases that are recieved by playing the game or by buying the case from the steam market. Once you open the case you 
+                by opening cases that are recieved by playing the game or by buying a case from the steam market or online market. Once you open the case you 
                 have a chance at getting a skin with differing rarity. The rarest gun skin being the coverts marked with the color red, and the 
                 the rarest items you can get from the cases are knives that have a 1 in 400 chance to drop. Each opening is random so even if you 
                 statistically have those odds at opening a knife you can open thousands of cases and never open one. 
@@ -56,12 +55,12 @@
 
             <div class="whyImages">
                 <div class="patternTemplate">
-                    <img src="public/case hardened.webp" height = "300" width = "300"> 
+                    <img src="public/casehardened.webp" height = "300" width = "300"> 
                     <p> Pattern Template for case hardened skinline </p>
                 </div>
                
                 <div class="caseHardened">
-                    <img src="public/why ak47.png">
+                    <img src="public/whyak47.png">
                     <p> Ak47 Case Hardened </p>
                 </div>
             </div>
@@ -77,12 +76,18 @@
             </p>
         </div>
 
+    </div>
+
+    <div class="skinsStart">
+        <h1> Skins </h1>
+        <input type="text" id="search"> <button onclick="handleSearch()"> search </button>
         <div class="Skins" id="skins">
 
         </div>
     </div>
- 
+    
    
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 
 </html>

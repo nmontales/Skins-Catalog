@@ -16,6 +16,9 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 36vw;
 }
 
 .navbarItems {
@@ -29,6 +32,7 @@ body {
     align-content: center;
     gap: 50px;
     width: 400px;
+    backdrop-filter: blur(50px);
 }
 
 .navButton {
@@ -39,7 +43,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .homeContents img {
@@ -54,7 +58,7 @@ body {
     color:white;
 }
 
-.whatContent h1{
+.whatContent h1 {
     color: white;
     text-align: center;
     margin-top: 60px;
@@ -107,4 +111,47 @@ body {
 
 .caseHardened {
     margin-top: 80px;
+}
+
+.Skins {
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: repeat(2,50%);
+    gap: 50px;
+
+}
+
+.Skins h1 {
+    text-align: center;
+    color: white;
+}
+
+.skinsContent {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgba(28, 27, 27, 0.3);
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 0px 25px;
+}
+
+.skinsContent p {
+
+}
+
+.skinsContent h2 {
+    display: flex;
+}
+
+.skinsContent img {
+    object-fit: contain;
+    aspect-ratio: 16/9;
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
 }
