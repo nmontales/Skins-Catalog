@@ -2,9 +2,10 @@
 <html>
 
 <head>
-    <title>CS2 skins</title>
+    <title>CS Catalog</title>
     <meta name="description" content="A catalog of some of the most expensive skins in CS2 and how much they are worth.">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -46,8 +47,8 @@
         <div class="whyContent">
             <h1> Why are some skins so expensive? </h1>
             <p>
-                Skins in Counter Strike have gotten to the prices they are because of how they are obtained. A majority of skins are recieved 
-                by opening cases that are recieved by playing the game or by buying a case from the steam market or online market. Once you open the case you 
+                Skins in Counter Strike have gotten to the prices they are because of how they are obtained. A majority of skins are obtained 
+                by opening cases that are received by playing the game or by buying a case from the Steam market or third party sellers. Once you open the case you 
                 have a chance at getting a skin with differing rarity. The rarest gun skin being the coverts marked with the color red, and the 
                 the rarest items you can get from the cases are knives that have a 1 in 400 chance to drop. Each opening is random so even if you 
                 statistically have those odds at opening a knife you can open thousands of cases and never open one. 
@@ -66,13 +67,12 @@
             </div>
 
             <p>
-                Once getting a skin there are still more factors that the price takes into account. Each skin has a wear rating and pattern 
-                index. Each weapon skin has an associated pattern template, and the pattern index dictates how this template is applied to a 
-                specific weapon. This can affect the positioning, rotation, and scale of the pattern on the weapon, resulting in visually 
-                distinct apearances even among weapons of the same skin type.The wear rating of the skin determines how clean the skin is 
-                gonna look. Factory new means that its the best rating, then it goes to minimal wear, field-tested, well-worn, and battle-scared. 
+                Even after obtaining a skin, several factors may affect the price. Each weapon skin has an associated pattern template, 
+                and the pattern index dictates how this template is applied to a specific weapon. This can affect the positioning, rotation, 
+                and scale of the pattern, resulting in visually distinct apearances even among weapons of the same skin type. The wear rating of the skin determines how clean the skin is 
+                going to look. Factory New means that it's the best rating, then it goes to minimal wear, field-tested, well-worn, and battle-scared. 
                 The rating depends on a numerical value called float, the lower the float the better the rating. The pattern index and wear value 
-                together significantly affect a skin's aesthetics and, by extension, it's market value. 
+                together significantly affect a skin's aesthetics and, by extension, its market value. 
             </p>
         </div>
 
@@ -80,13 +80,27 @@
 
     <div class="skinsStart">
         <h1> Skins </h1>
-        <input type="text" id="search"> <button onclick="handleSearch()"> search </button>
-        <div class="Skins" id="skins">
 
+        <div class="filters">
+            <div class="search">
+                <input type="text" id="search"> <button onclick="handleSearch()"> search </button>
+            </div>
+            
+            <div class="filter">
+                <label for="filter"> filter </label>
+                 <select id="filter" name="filter">
+                    <option value="highest"> sort by highest price </option>
+                    <option value="lowest"> sort by lowest price </option>
+                    <option value="original"> show original </option>
+                 </select>
+                <button onclick="handleFilter()"> submit </button> 
+            </div>
+        </div>
+        
+        <div class="Skins" id="skins">
         </div>
     </div>
     
-   
     <script type="text/javascript" src="scripts.js"></script>
 </body>
 

@@ -4,7 +4,7 @@ This is the instructions, requirements, and starter for stage two of the Snap En
 
 ## Your Task:
 
-<h3 align="center">Create a "catalog" website for something you're passionate about.</h1>
+<h3 align="center">Create a "catalog" website for something you're passionate about.</h3>
 
 > [!NOTE]
 > If you have not used Github or programmed a website with JavaScript before, that's OK! Part of the challenge is figuring out things you're not familiar with.  
